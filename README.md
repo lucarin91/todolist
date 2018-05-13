@@ -13,6 +13,6 @@ Start the application with
 yarn start
 ```
 
-## Licence
+## License
 
-[MIT](LICENCE)
+[MIT](LICENSE)
