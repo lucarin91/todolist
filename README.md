@@ -1,6 +1,6 @@
 # Todo List
 
-A simple todo list to show the difference between the user of pure React against React + Redux.
+A simple todo list to created with React + Redux.
 
 ## Getting starter
 Download the repository with

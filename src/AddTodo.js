@@ -5,21 +5,17 @@ import './AddTodo.css';
 class AddTodo extends Component {
   constructor(props) {
     super(props);
-    this.state = {todo: ''};
-    this.handleChange= this.handleChange.bind(this);
-    this.handleAdd = this.handleAdd.bind(this);
+    this.input;
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleChange(event) {
-    this.setState({todo: event.target.value});
-  }
-  handleAdd(event) {
+  handleSubmit(event){
     event.preventDefault();
-    this.props.onNewTodo(this.state.todo);
-    this.setState({todo: ''})
+    this.props.onAdd(this.input.value);
+    this.input.value = '';
   }
   render() {
-    return (<form onSubmit={this.handleAdd}>
-      <input class="AddTodo-input" type="text" value={this.state.todo} onChange={this.handleChange}/>
+    return (<form onSubmit={this.handleSubmit}>
+      <input ref={node => this.input = node} class="AddTodo-input" type="text"/>
       <input type="submit" value="Add"/>
     </form>);
   }
