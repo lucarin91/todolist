@@ -5,7 +5,7 @@ A simple todo list to created with React + Redux.
 ## Getting starter
 Download the repository with
 ```
-git clone ...
+git clone https://github.com/lucarin91/todolist
 ```
 
 Start the application with
@@ -13,6 +13,6 @@ Start the application with
 yarn start
 ```
 
-## Licence
+## License
 
-[MIT](LICENCE)
+[MIT](LICENSE)
