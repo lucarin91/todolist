@@ -5,7 +5,7 @@ A simple todo list to show the difference between the user of pure React against
 ## Getting starter
 Download the repository with
 ```
-git clone ...
+git clone https://github.com/lucarin91/todolist
 ```
 
 Start the application with
